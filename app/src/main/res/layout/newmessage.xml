@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mes_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="100px"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/message"/>
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="5dp"
+        android:text="18:03:24"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/clock"
+        android:text="2022-03-28"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mes_Img"
+        android:layout_alignLeft="@id/mes_Img"
+        android:layout_alignRight="@id/clock"
+        android:text="____________________________________________________"
+        android:textColor="#8C8C8C"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mes_Img"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="3dp"
+        android:text="aaa"
+        android:textSize="20sp"
+        android:textColor="#8C8C8C"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_marginTop="5dp"
+        android:text="title is here"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/signup_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="사용자 계정 생성"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#3F51B5"
+        android:text="가입"
+        android:onClick="backClick" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/signup"/>
+
+    <ImageView
+        android:id="@+id/id_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_below="@id/img"
+        android:layout_alignLeft="@id/but"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/id"/>
+
+    <EditText
+        android:id="@+id/id_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_toRightOf="@id/id_Img"
+        android:layout_alignRight="@id/img"
+        android:layout_marginTop="65dp"
+        android:hint="ID"
+        android:textColor="#8C8C8C" />
+
+    <Button
+        android:id="@+id/check_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/but"
+        android:layout_alignBottom="@id/id_Edit"
+        android:layout_toRightOf="@id/id_Edit"
+        android:backgroundTint="#3F51B5"
+        android:text="CHECK"
+        android:textSize="10sp"
+        android:onClick="checkClick"/>
+
+    <ImageView
+        android:id="@+id/pw_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_below="@id/id_Img"
+        android:layout_alignLeft="@id/id_Img"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/pw" />
+
+    <EditText
+        android:id="@+id/pw_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_Edit"
+        android:layout_alignRight="@id/but"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/pw_Img"
+        android:hint="암호"
+        android:textColor="#8C8C8C" />
+
+    <ImageView
+        android:id="@+id/name_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="23dp"
+        android:layout_alignLeft="@id/pw_Img"
+        android:layout_below="@id/pw_Edit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/nametag"/>
+
+    <EditText
+        android:id="@+id/name_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pw_Edit"
+        android:layout_alignRight="@id/but"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/name_Img"
+        android:hint="이름"
+        android:textColor="#8C8C8C" />
+
+
+
+
+
+</RelativeLayout>
